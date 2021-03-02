@@ -20,6 +20,7 @@ public class AuthController {
         return ResponseEntity.ok(authService.signIn(signInRequest));
     }
 
+    @PostMapping("/sign-up")
     public ResponseEntity<?> signUp(@RequestBody SignUpRequest signUpRequest){
         return authService.signUp(signUpRequest);
     }
