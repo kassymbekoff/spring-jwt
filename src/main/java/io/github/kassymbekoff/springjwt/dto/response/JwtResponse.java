@@ -1,6 +1,5 @@
 package io.github.kassymbekoff.springjwt.dto.response;
 
-import io.github.kassymbekoff.springjwt.models.Role;
 import lombok.Data;
 
 import java.util.List;
@@ -12,9 +11,9 @@ public class JwtResponse {
     private int id;
     private String username;
     private String email;
-    private List<Role> roles;
+    private List<String> roles;
 
-    public JwtResponse(String token, int id, String username, String email, List<Role> roles){
+    public JwtResponse(String token, int id, String username, String email, List<String> roles){
         this.token = token;
         this.id    = id;
         this.username = username;
